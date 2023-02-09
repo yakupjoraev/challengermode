@@ -1,0 +1,21 @@
+@keyframes toTop {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animation {
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-delay: 0ms;
+  animation-name: toTop;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}

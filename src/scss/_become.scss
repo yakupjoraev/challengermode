@@ -1,0 +1,115 @@
+.become {
+  padding: 96px 0;
+  background-color: var(--background-color-1);
+
+  @media (max-width: $breakpoint992) {
+    padding: 64px 0;
+  }
+
+
+  // .become__inner
+
+  &__inner {}
+
+  // .become__header
+
+  &__header {
+    position: relative;
+    padding: 64px;
+    background-image: url('../img/index/become-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 5px 1px rgb(0 0 0 / 60%);
+    border-radius: 16px;
+    margin-bottom: 64px;
+
+    @media (max-width: $breakpoint992) {
+      padding: 64px 20px;
+    }
+  }
+
+  // .become__decor
+
+  &__decor {
+    height: 110px;
+    padding-top: 64px;
+    font-size: 72px;
+    color: var(--main-color);
+
+    @media (max-width: $breakpoint992) {
+      padding-top: 30px;
+      height: 70px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding-top: 0;
+      height: 40px;
+    }
+  }
+
+  // .become__descr
+
+  &__descr {
+    max-width: 700px;
+    margin-bottom: 32px;
+    font-size: 21px;
+    line-height: 150%;
+    color: var(--svg-color);
+
+    @media (max-width: $breakpoint480) {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+  }
+
+  // .become__autor
+
+  &__autor {
+    padding-bottom: 64px;
+    font-size: 21px;
+    line-height: 150%;
+    color: var(--svg-color);
+
+    @media (max-width: $breakpoint992) {
+      padding-bottom: 30px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      padding-bottom: 0;
+      font-size: 18px;
+    }
+  }
+
+  // .become__footer
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .become__link
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 21px;
+    color: var(--main-color);
+
+    svg {
+      transition: transform 0.2s linear;
+    }
+
+    &:hover {
+
+      svg {
+        transform: translateX(5px);
+      }
+    }
+  }
+}

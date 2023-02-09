@@ -1,0 +1,230 @@
+.avaible {
+  position: relative;
+  padding: 96px 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/index/avaible-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    opacity: 0.3;
+    z-index: -1;
+  }
+
+  // .avaible__title
+
+  &__title {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  // .avaible__games
+
+  &__games {
+    margin-bottom: 32px;
+  }
+
+  // .avaible__list
+
+  &__list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 90%;
+      background-color: var(--text-color);
+    }
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(2, 1fr);
+
+      &::after {
+        content: none;
+      }
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .avaible__item
+
+  &__item {
+    display: grid;
+  }
+
+  // .avaible__item-picture
+
+  &__item-picture {
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  // .avaible__item-img
+
+  &__item-img {
+    max-width: 100%;
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  // .avaible__item-icon
+
+  &__item-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+  }
+
+  // .avaible__item-footer
+
+  &__item-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  // .avaible__item-logo
+
+  &__item-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+
+  // .avaible__item-info
+
+  &__item-info {}
+
+  // .avaible__item-tournament
+
+  &__item-tournament {
+    height: 20px;
+    width: fit-content;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid #5e6170;
+    font-size: 11px;
+    line-height: 17px;
+    padding: 0 6px;
+    margin-bottom: 5px;
+    color: #5e6170;
+  }
+
+  // .avaible__item-title
+
+  &__item-title {
+    margin-bottom: 5px;
+    font-family: var(--second-font);
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 14px;
+    color: var(--svg-color);
+
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+
+  // .avaible__item-descr
+
+  &__item-descr {
+    margin-bottom: 5px;
+    line-height: 150%;
+    font-size: 13px;
+    color: var(--grey-color);
+  }
+
+  // .avaible__item-raitings
+
+  &__item-raitings {
+    display: flex;
+    gap: 5px;
+  }
+
+  // .avaible__item-raiting
+
+  &__item-raiting {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    svg path {
+      fill: var(--main-color);
+    }
+  }
+
+  // .avaible__item-sum
+
+  &__item-sum {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    line-height: 100%;
+    font-size: 14px;
+    color: var(--svg-color);
+  }
+
+  // .avaible__item-count
+
+  &__item-count {
+    line-height: 100%;
+    font-size: 11px;
+    color: var(--grey-color);
+  }
+
+  // .avaible__view
+
+  &__view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    gap: 10px;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 16px;
+    color: var(--main-color);
+
+    svg {
+      transition: transform 0.2s linear;
+    }
+
+    &:hover {
+
+      svg {
+        transform: translateX(5px);
+      }
+    }
+  }
+}

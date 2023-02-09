@@ -1,0 +1,129 @@
+.reviews {
+  padding: 96px 0;
+  background-color: var(--background-color-1);
+
+  @media (max-width: $breakpoint992) {
+    padding: 64px 0;
+  }
+
+
+  // .reviews__title
+
+  &__title {
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  // .reviews__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    @media (max-width: $breakpoint992) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .reviews__item
+
+  &__item {
+    display: grid;
+    align-content: space-between;
+    padding: 32px;
+    border: 1px solid #262831;
+    border-radius: 16px;
+
+    @media (max-width: $breakpoint480) {
+      padding: 20px;
+    }
+  }
+
+  // .reviews__item-header
+
+  &__item-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 16px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  // .reviews__item-sum
+
+  &__item-sum {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 100%;
+    color: var(--svg-color);
+  }
+
+  // .reviews__item-text
+
+  &__item-text {
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 20px;
+
+    @media (max-width: $breakpoint480) {
+      font-size: 17px;
+    }
+  }
+
+  // .reviews__item-footer
+
+  &__item-footer {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  // .reviews__item-logo
+
+  &__item-logo {
+    margin-right: 5px;
+  }
+
+  // .reviews__item-img
+
+  &__item-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // .reviews__item-info
+
+  &__item-info {}
+
+  // .reviews__item-name
+
+  &__item-name {
+    margin-bottom: 3px;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 16px;
+    color: var(--svg-color);
+
+    &:hover {
+      color: var(--main-color);
+    }
+  }
+
+  // .reviews__item-descr
+
+  &__item-descr {
+    font-size: 13px;
+    line-height: 150%;
+    color: var(--grey-color);
+  }
+}

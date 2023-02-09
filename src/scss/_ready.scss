@@ -1,0 +1,31 @@
+.ready {
+  padding: 96px 0;
+  background-color: var(--background-color-1);
+
+  @media (max-width: $breakpoint992) {
+    padding: 64px 0;
+  }
+
+  // .ready__title
+
+  &__title {
+    max-width: 720px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    text-align: center;
+
+    @media (max-width: $breakpoint768) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .ready__link
+
+  &__link {
+    width: 200px;
+    height: 56px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
