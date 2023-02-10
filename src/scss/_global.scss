@@ -34,22 +34,31 @@ body {
   }
 }
 
-body,
-html {
-  &::-webkit-scrollbar-corner {
+html,
+body {
+
+  ::-webkit-scrollbar {
+    background-color: initial;
+    border-radius: 10px;
+    height: 6px;
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-corner {
     background-color: initial;
   }
 
-  &::-webkit-scrollbar-thumb {
+  ::-webkit-scrollbar-thumb {
     background-color: initial;
     border-radius: 10px;
   }
 
-  &::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 10px;
   }
 }
+
 
 // Animations
 // Fade

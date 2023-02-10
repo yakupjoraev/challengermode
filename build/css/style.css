@@ -97,19 +97,27 @@ body.locked {
   overflow: hidden;
 }
 
-body::-webkit-scrollbar-corner,
-html::-webkit-scrollbar-corner {
+html ::-webkit-scrollbar,
+body ::-webkit-scrollbar {
+  background-color: initial;
+  border-radius: 10px;
+  height: 6px;
+  width: 6px;
+}
+
+html ::-webkit-scrollbar-corner,
+body ::-webkit-scrollbar-corner {
   background-color: initial;
 }
 
-body::-webkit-scrollbar-thumb,
-html::-webkit-scrollbar-thumb {
+html ::-webkit-scrollbar-thumb,
+body ::-webkit-scrollbar-thumb {
   background-color: initial;
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-track,
-html::-webkit-scrollbar-track {
+html ::-webkit-scrollbar-track,
+body ::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 10px;
 }
@@ -341,7 +349,7 @@ html::-webkit-scrollbar-track {
 
 .hero {
   position: relative;
-  padding: 160px 0 16px;
+  padding: 260px 0 16px;
 }
 
 .hero::before {
