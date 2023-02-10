@@ -475,8 +475,8 @@ body ::-webkit-scrollbar-track {
 
 .avaible__item-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 8px;
+  left: 8px;
   width: 24px;
   height: 24px;
   border-radius: 8px;
